@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "el-soul"
+  },
+  "targets": {
+    "el-soul": {
+      "hosting": {
+        "souls-doc-v2": [
+          "souls-doc-v2"
+        ]
+      }
+    }
+  }
+}

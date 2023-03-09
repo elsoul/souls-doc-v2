@@ -1,0 +1,119 @@
+{
+  "title": "Ruby Serverless Framework - SOULs",
+  "body": "Focus on business logic in serverless environment",
+  "previousPage": "Previous page",
+  "nextPage": "Next page",
+  "actions": {
+    "motivation": {
+      "title": "Motivation",
+      "body": "The SOULs project was launched with the goal of reducing software development, operation and maintenance costs."
+    },
+    "quickstart": {
+      "title": "Quickstart",
+      "body": "You can build the GraphQL API immediately by installing the required packages for SOULs."
+    },
+    "tutorial": {
+      "title": "Tutorial",
+      "body": "This SOULs tutorial is designed for those who want to learn by practically developing a mini-application. "
+    },
+    "basic": {
+      "title": "Basic Guide",
+      "body": "Overview of the SOULs Framework."
+    },
+    "api": {
+      "title": "SOULs API",
+      "body": "This section describes the basic architecture of the SOULs serverless Ruby GraphQL API framework."
+    },
+    "worker": {
+      "title": "SOULs Worker",
+      "body": "This section describes the basic architecture of the SOULs serverless Ruby GraphQL Worker framework."
+    }
+  },
+  "menuNav": {
+    "home": "Doc Home",
+    "general": {
+      "groupTitle": "General",
+      "motivation": "Motivation",
+      "make-a-change-resistant-software": "Make software that is resistant to change",
+      "get-a-comfortable-dev-env": "Get a comfortable development environment",
+      "quickstart": "Quickstart"
+    },
+    "tutorial": {
+      "groupTitle": "Tutorial",
+      "introduction": "Introduction",
+      "souls-api-deploy": "Deploy SOULs API",
+      "create-model": "Create Model",
+      "execute-scaffold": "Execute Scaffold",
+      "connect-graphql-edge": "Connect GraphQL edge",
+      "souls-worker-deploy": "Deploy SOULs Worker",
+      "graphql-batch-loader": "Avoid N + 1 query problems"
+    },
+    "basic": {
+      "groupTitle": "Basic Guide",
+      "souls-basic-architecture": "Overview",
+      "api-basic-architecture": "Basic architecture",
+      "graphql-api": "GraphQL API",
+      "auto-test": "AutoTest - Rspec",
+      "formatter-rubocop": "Formatter - Rubocop",
+      "firebase-user-authentication": "Firebase Authentication",
+      "add-pubsub-messaging": "Pub/Sub Messaging"
+    },
+    "api": {
+      "groupTitle": "SOULs API",
+      "api-basic-architecture": "Basic architecture",
+      "graphql-api": "GraphQL API",
+      "auto-test": "AutoTest - Rspec",
+      "formatter-rubocop": "Formatter - Rubocop",
+      "firebase-user-authentication": "Firebase Authentication",
+      "graphql-batch-loader": "Avoid N + 1 query problems",
+      "update-model": "Model updates"
+    },
+    "worker": {
+      "groupTitle": "SOULs Worker",
+      "worker-basic-architecture": "Basic architecture",
+      "add-mailer": "Add mailer",
+      "add-scraper": "Add scraper",
+      "cron-job": "Cron Job",
+      "add-cloud-nat": "Outbound static IP address"
+    },
+    "functions": {
+      "groupTitle": "SOULs Functions",
+      "functions-basic-architecture": "Basic architecture",
+      "create-ruby-cloud-functions": "Ruby Runtime",
+      "create-nodejs-cloud-functions": "Node.js Runtime",
+      "create-python-cloud-functions": "Python Runtime",
+      "create-go-cloud-functions": "Go Runtime"
+    },
+    "api-reference": {
+      "groupTitle": "API Reference",
+      "souls-cli-console": "SOULs Console",
+      "souls-cli-create": "SOULs Create",
+      "souls-cli-db": "SOULs DB",
+      "souls-cli-delete": "SOULs Delete",
+      "souls-cli-docker": "SOULs Docker",
+      "souls-cli-gcloud": "SOULs Gcloud",
+      "souls-cli-generate": "SOULs Generate",
+      "souls-cli-github": "SOULs Github",
+      "souls-cli-server": "SOULs Server",
+      "souls-cli-sync": "SOULs Sync",
+      "souls-cli-update": "SOULs Update",
+      "souls-cli-upgrade": "SOULs Upgrade"
+    },
+    "dependencies": {
+      "groupTitle": "Dependencies",
+      "ruby-install": "Ruby install",
+      "psql-install": "PostgreSQL install",
+      "github-cli-install": "Github CLI install",
+      "redis-install": "Redis install",
+      "webdriver-install": "Webdriver install"
+    },
+    "release": {
+      "groupTitle": "Release",
+      "roadmap": "Roadmap",
+      "history": "Release history"
+    }
+  },
+  "headerNav": {
+    "home": "Home"
+  }
+}

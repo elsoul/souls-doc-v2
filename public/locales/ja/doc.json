@@ -1,0 +1,119 @@
+{
+  "title": "Ruby Serverless Framework - SOULs",
+  "body": "最適化されたサーバーレス環境でビジネスロジックに集中",
+  "previousPage": "前のページ",
+  "nextPage": "次のページ",
+  "actions": {
+    "motivation": {
+      "title": "モチベーション",
+      "body": "SOULs プロジェクトはソフトウェアの開発・運用・保守に関するコストを下げることを目的に立ち上げられました。"
+    },
+    "quickstart": {
+      "title": "クイックスタート",
+      "body": "ここでは SOULs に必要なパッケージをインストールすれば、すぐに GraphQL API を構築できることを確認します。"
+    },
+    "tutorial": {
+      "title": "チュートリアル",
+      "body": "この SOULs チュートリアル は実際に手を動かして学びたい人向けに構成されています。"
+    },
+    "basic": {
+      "title": "基本ガイド",
+      "body": "ここでは SOULs フレームワーク の全体像について説明します。"
+    },
+    "api": {
+      "title": "SOULs API",
+      "body": "ここでは SOULs サーバーレス Ruby GraphQL API フレームワークの基本的なアーキテクチャについて説明します。"
+    },
+    "worker": {
+      "title": "SOULs Worker",
+      "body": "ここでは SOULs サーバーレス Ruby GraphQL Worker フレームワークの基本的なアーキテクチャについて説明します。"
+    }
+  },
+  "menuNav": {
+    "home": "ドキュメントホーム",
+    "general": {
+      "groupTitle": "全般",
+      "motivation": "モチベーション",
+      "make-a-change-resistant-software": "変化に強いソフトウェアを作る",
+      "get-a-comfortable-dev-env": "快適な開発環境を手に入れる",
+      "quickstart": "クイックスタート"
+    },
+    "tutorial": {
+      "groupTitle": "チュートリアル",
+      "introduction": "はじめに",
+      "souls-api-deploy": "SOULs API のデプロイ",
+      "create-model": "モデルの作成",
+      "execute-scaffold": "Scaffold の実行",
+      "connect-graphql-edge": "GraphQL エッジの接続",
+      "souls-worker-deploy": "SOULs Worker のデプロイ",
+      "graphql-batch-loader": "N + 1 クエリ問題を回避する"
+    },
+    "basic": {
+      "groupTitle": "基本ガイド",
+      "souls-basic-architecture": "フレームワーク の 全体像",
+      "api-basic-architecture": "基本アーキテクチャ",
+      "graphql-api": "GraphQL API",
+      "auto-test": "自動テスト - Rspec",
+      "formatter-rubocop": "Formatter - Rubocop",
+      "firebase-user-authentication": "Firebase ユーザー登録・認証",
+      "add-pubsub-messaging": "Pub/Sub メッセージング"
+    },
+    "api": {
+      "groupTitle": "SOULs API",
+      "api-basic-architecture": "基本アーキテクチャ",
+      "graphql-api": "GraphQL API",
+      "auto-test": "自動テスト - Rspec",
+      "formatter-rubocop": "Formatter - Rubocop",
+      "firebase-user-authentication": "Firebase ユーザー登録・認証",
+      "graphql-batch-loader": "N + 1 クエリ問題を回避する",
+      "update-model": "Modelの作成・追加・更新"
+    },
+    "worker": {
+      "groupTitle": "SOULs Worker",
+      "worker-basic-architecture": "基本アーキテクチャ",
+      "add-mailer": "Mailer の追加",
+      "add-scraper": "Scraper の追加",
+      "cron-job": "Job の定期実行",
+      "add-cloud-nat": "外向き静的IPアドレスの設定"
+    },
+    "functions": {
+      "groupTitle": "SOULs Functions",
+      "functions-basic-architecture": "基本アーキテクチャ",
+      "create-ruby-cloud-functions": "Ruby ランタイム",
+      "create-nodejs-cloud-functions": "Node.js ランタイム",
+      "create-python-cloud-functions": "Python ランタイム",
+      "create-go-cloud-functions": "Go ランタイム"
+    },
+    "api-reference": {
+      "groupTitle": "API Reference",
+      "souls-cli-console": "SOULs Console",
+      "souls-cli-create": "SOULs Create",
+      "souls-cli-db": "SOULs DB",
+      "souls-cli-delete": "SOULs Delete",
+      "souls-cli-docker": "SOULs Docker",
+      "souls-cli-gcloud": "SOULs Gcloud",
+      "souls-cli-generate": "SOULs Generate",
+      "souls-cli-github": "SOULs Github",
+      "souls-cli-server": "SOULs Server",
+      "souls-cli-sync": "SOULs Sync",
+      "souls-cli-update": "SOULs Update",
+      "souls-cli-upgrade": "SOULs Upgrade"
+    },
+    "dependencies": {
+      "groupTitle": "Dependencies",
+      "ruby-install": "Ruby インストール",
+      "psql-install": "PostgreSQL インストール",
+      "github-cli-install": "Github CLI インストール",
+      "redis-install": "Redis Server インストール",
+      "webdriver-install": "WebDriver インストール"
+    },
+    "release": {
+      "groupTitle": "リリース",
+      "roadmap": "開発ロードマップ",
+      "history": "リリース履歴"
+    }
+  },
+  "headerNav": {
+    "home": "ホームページ"
+  }
+}
