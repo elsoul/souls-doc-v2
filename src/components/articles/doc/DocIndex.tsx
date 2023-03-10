@@ -11,6 +11,7 @@ import {
   CubeIcon,
 } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
+import SkeetRow from '@/components/pages/common/SkeetRow'
 
 const actions = [
   {
@@ -126,6 +127,7 @@ export default function DocIndex({}: Props) {
             ))}
           </div>
         </div>
+        <SkeetRow />
       </div>
     </>
   )
