@@ -14,8 +14,8 @@ const seo = {
     en: 'Doc top page',
   },
   description: {
-    ja: 'Media SSG Template ドキュメントトップページ',
-    en: 'Media SSGDoc top page',
+    ja: 'SOULs ドキュメントトップページ',
+    en: 'SOULs Doc top page',
   },
   img: null,
 }

@@ -11,8 +11,8 @@ const seo = {
     en: 'Top page',
   },
   description: {
-    ja: 'Next.jsのスターターキット。SEO対応、多言語対応、SSG。',
-    en: 'Next.js Starter kit. SEO compatible, i18n translation, SSG.',
+    ja: 'CI/CD 標準装備のスキーマ駆動 Scaffold (自動生成) による開発効率の最大化。より少ない管理コストでグローバル規模のスケールを実現。GCPのサーバーレスです。',
+    en: "Maximize development efficiency with schema-driven Scaffold (automatically generated) that comes standard with CI / CD. Achieve global scale with lower management costs. It's serverless running on GCP.",
   },
   img: null,
 }
