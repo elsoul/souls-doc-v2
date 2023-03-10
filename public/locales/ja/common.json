@@ -23,5 +23,10 @@
   },
   "SkeetRow": {
     "body": "フルスタック TypeScript サーバーレスアプリケーションフレームワーク"
+  },
+  "DiscordRow": {
+    "title": "コミュニティ Discord",
+    "body": "各種お問い合わせ等ございましたらコミュニティDiscord内にてサポートチケットを作成してください。",
+    "button": "JOIN"
   }
 }

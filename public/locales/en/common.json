@@ -23,5 +23,10 @@
   },
   "SkeetRow": {
     "body": "Full-stack TypeScript Serverless Application Framework"
+  },
+  "DiscordRow": {
+    "title": "Community Discord",
+    "body": "If you have any inquiries, please create a support ticket in the community Discord.",
+    "button": "JOIN"
   }
 }
