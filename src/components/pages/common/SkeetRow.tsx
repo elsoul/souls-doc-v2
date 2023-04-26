@@ -38,7 +38,7 @@ export default function SkeetRow() {
             Skeet Docs
           </Button>
           <Button
-            href="https://github.com/elsoul/skeet"
+            href="https://github.com/elsoul/skeet-cli"
             variant="outline"
             className=""
             target="_blank"

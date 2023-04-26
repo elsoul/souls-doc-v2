@@ -2,7 +2,7 @@
 
 Docs for SOULs. (SOULs is now deprecated. Please check our new Architecture "Skeet")
 
-[Skeet - TypeScript Serverless Framework](https://github.com/elsoul/skeet)
+[Skeet - TypeScript Serverless Framework](https://github.com/elsoul/skeet-cli)
 
 ## Aiming to
 
