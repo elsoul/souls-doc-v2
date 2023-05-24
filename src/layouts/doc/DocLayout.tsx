@@ -23,8 +23,9 @@ type Props = {
   children: ReactNode
 }
 
+const mainContentId = 'docMainContent'
+
 export default function DocLayout({ children }: Props) {
-  const resetWindowScrollPosition = useCallback(() => window.scrollTo(0, 0), [])
   const router = useRouter()
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const { t } = useTranslation()
@@ -33,11 +34,20 @@ export default function DocLayout({ children }: Props) {
     return router.asPath.replace('/ja/', '/').replace('/en/', '/')
   }, [router.asPath])
 
-  useEffect(() => {
-    if (!router.asPath.includes('#')) {
-      resetWindowScrollPosition()
-      setSidebarOpen(false)
+  const resetWindowScrollPosition = useCallback(() => {
+    const element = document.getElementById(mainContentId)
+    if (element) {
+      element.scrollIntoView({ block: 'start' })
     }
+  }, [])
+  useEffect(() => {
+    ;(async () => {
+      setSidebarOpen(false)
+      await new Promise((resolve) => setTimeout(resolve, 100))
+      if (!router.asPath.includes('#')) {
+        resetWindowScrollPosition()
+      }
+    })()
   }, [router.asPath, resetWindowScrollPosition])
 
   return (
@@ -71,7 +81,7 @@ export default function DocLayout({ children }: Props) {
                 leaveFrom="translate-x-0"
                 leaveTo="-translate-x-full"
               >
-                <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-white pt-5 pb-4 dark:bg-gray-900">
+                <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-white pb-4 pt-5 dark:bg-gray-900">
                   <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-300"
@@ -81,7 +91,7 @@ export default function DocLayout({ children }: Props) {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                   >
-                    <div className="absolute top-0 right-0 -mr-12 pt-2">
+                    <div className="absolute right-0 top-0 -mr-12 pt-2">
                       <button
                         type="button"
                         className="ml-1 flex h-10 w-10 items-center justify-center focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -258,7 +268,7 @@ export default function DocLayout({ children }: Props) {
                     icon={faGithub}
                     size="sm"
                     aria-label="GitHub icon"
-                    className="mt-1.5 ml-2 h-5 w-5"
+                    className="ml-2 mt-1.5 h-5 w-5"
                   />
                 </a>
                 <a
@@ -272,7 +282,7 @@ export default function DocLayout({ children }: Props) {
                     icon={faDiscord}
                     size="sm"
                     aria-label="Discord icon"
-                    className="mt-1.5 ml-2 h-5 w-5"
+                    className="ml-2 mt-1.5 h-5 w-5"
                   />
                 </a>
                 <Menu as="div" className="relative ml-3">
@@ -317,7 +327,10 @@ export default function DocLayout({ children }: Props) {
           </div>
 
           <div className="py-6">
-            <div className="mx-auto min-h-screen px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            <div
+              id={mainContentId}
+              className="mx-auto min-h-screen px-4 sm:px-6 lg:max-w-7xl lg:px-8"
+            >
               {children}
             </div>
           </div>
