@@ -22,8 +22,8 @@
     "no": "No, I Do Not Accept"
   },
   "SkeetRow": {
-    "body1": "Full-stack Serverless Framework for auto-scaling apps on Firebase.",
-    "body2": ""
+    "body1": "Open-Source Serverless Framework for zero-maintenance",
+    "body2": "apps on GCP (Google Cloud) and Firebase."
   },
   "ContactRow": {
     "discord": {
