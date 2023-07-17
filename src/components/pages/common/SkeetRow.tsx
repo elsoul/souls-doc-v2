@@ -48,7 +48,7 @@ export default function SkeetRow() {
             <br />
             Serverless.
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-gray-700 dark:text-gray-200">
+          <p className="mx-auto mt-6 max-w-lg text-lg tracking-tight text-gray-700 dark:text-gray-200">
             {t('common:SkeetRow.body1')}
             <br />
             {t('common:SkeetRow.body2')}
