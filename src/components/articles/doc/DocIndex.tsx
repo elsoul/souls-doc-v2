@@ -16,7 +16,7 @@ import SkeetRow from '@/components/pages/common/SkeetRow'
 const actions = [
   {
     title: 'doc:actions.motivation.title',
-    body: 'doc:actions.motivation.Body',
+    body: 'doc:actions.motivation.body',
     href: '/doc/about/motivation',
     icon: HeartIcon,
     iconForeground: 'text-pink-700',
