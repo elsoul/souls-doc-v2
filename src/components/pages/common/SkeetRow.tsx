@@ -3,15 +3,15 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import firebaseLogo from '@/assets/img/logo/projects/Firebase.svg'
 import googleCloudLogo from '@/assets/img/logo/projects/GoogleCloudHorizontal.svg'
-import androidLogo from '@/assets/img/logo/projects/android.svg'
-import iosLogo from '@/assets/img/logo/projects/ios.svg'
 import typescriptLogo from '@/assets/img/logo/projects/TypeScriptHorizontal.svg'
+import graphqlLogo from '@/assets/img/logo/projects/graphql.svg'
+import prismaLogo from '@/assets/img/logo/projects/prisma.svg'
+import expoLogo from '@/assets/img/logo/projects/Expo.svg'
+import nextLogo from '@/assets/img/logo/projects/nextjs.svg'
+import apolloLogo from '@/assets/img/logo/projects/apollo.svg'
 import { Button } from '@/components/common/atoms/Button'
 import clsx from 'clsx'
 import SkeetLogoHorizontalLink from '@/components/common/atoms/SkeetLogoHorizontalLink'
-import reactLogo from '@/assets/img/logo/projects/react.svg'
-import graphqlLogo from '@/assets/img/logo/projects/graphql.svg'
-import prismaLogo from '@/assets/img/logo/projects/prisma.svg'
 
 export default function SkeetRow() {
   const { t } = useTranslation()
@@ -112,19 +112,19 @@ export default function SkeetRow() {
                     link: 'https://graphql.org/',
                   },
                   {
-                    name: 'React',
-                    logo: reactLogo,
-                    link: 'https://react.dev/',
+                    name: 'Apollo',
+                    logo: apolloLogo,
+                    link: 'https://www.apollographql.com/',
                   },
                   {
-                    name: 'iOS',
-                    logo: iosLogo,
-                    link: 'https://developer.apple.com/',
+                    name: 'Next.js',
+                    logo: nextLogo,
+                    link: 'https://nextjs.org/',
                   },
                   {
-                    name: 'Android',
-                    logo: androidLogo,
-                    link: 'https://developer.android.com/',
+                    name: 'Expo',
+                    logo: expoLogo,
+                    link: 'https://expo.dev/',
                   },
                 ],
               ].map((group, groupIndex) => (
