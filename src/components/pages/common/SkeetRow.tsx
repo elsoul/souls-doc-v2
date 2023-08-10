@@ -12,9 +12,20 @@ import apolloLogo from '@/assets/img/logo/projects/apollo.svg'
 import { Button } from '@/components/common/atoms/Button'
 import clsx from 'clsx'
 import SkeetLogoHorizontalLink from '@/components/common/atoms/SkeetLogoHorizontalLink'
+import { copyToClipboard } from '@/utils/userAction'
+import { useCallback, useState } from 'react'
 
 export default function SkeetRow() {
   const { t } = useTranslation()
+  const [copyText, setCopyText] = useState('common:copy')
+  const handleClick = useCallback(() => {
+    copyToClipboard('npm i -g @skeet-framework/cli')
+    setCopyText('common:copied')
+
+    setTimeout(() => {
+      setCopyText('common:copy')
+    }, 2000)
+  }, [])
 
   return (
     <>
@@ -56,7 +67,7 @@ export default function SkeetRow() {
           <div className="py-12">
             <SkeetLogoHorizontalLink className="w-42 mx-auto h-12" />
           </div>
-          <div className="mt-10 flex justify-center gap-x-6">
+          <div className="mt-2 flex justify-center gap-x-6">
             <Button
               href="https://skeet.dev"
               className=""
@@ -75,7 +86,27 @@ export default function SkeetRow() {
               GitHub
             </Button>
           </div>
-          <div className="mb-40 mt-36 lg:mt-48">
+          <div className="relative mx-auto mt-16 max-w-sm rounded-md bg-gray-900 p-4 text-white">
+            <div className="absolute left-2 top-2 flex space-x-1.5">
+              <div className="h-2.5 w-2.5 rounded-full bg-red-500"></div>
+              <div className="h-2.5 w-2.5 rounded-full bg-yellow-400"></div>
+              <div className="h-2.5 w-2.5 rounded-full bg-green-500"></div>
+            </div>
+            <div className="absolute right-3 top-1.5 flex space-x-1.5">
+              <button
+                onClick={() => {
+                  handleClick()
+                }}
+                className="text-xs hover:text-gray-200"
+              >
+                {t(copyText)}
+              </button>
+            </div>
+            <div className="pt-4 text-left font-mono">
+              $ npm i -g @skeet-framework/cli
+            </div>
+          </div>
+          <div className="mb-40 mt-24 lg:mt-36">
             <ul
               role="list"
               className="mt-8 flex flex-col items-center justify-center gap-x-8 sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"

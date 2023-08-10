@@ -6,6 +6,8 @@
   "toc": "目次",
   "openMenu": "メニューを開く",
   "closeMenu": "メニューを閉じる",
+  "copy": "コピー",
+  "copied": "コピーしました!",
   "navs": {
     "defaultMainNav": {
       "doc": "ドキュメント"
