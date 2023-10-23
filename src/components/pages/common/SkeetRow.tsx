@@ -14,6 +14,7 @@ import clsx from 'clsx'
 import SkeetLogoHorizontalLink from '@/components/common/atoms/SkeetLogoHorizontalLink'
 import { copyToClipboard } from '@/utils/userAction'
 import { useCallback, useState } from 'react'
+import openAILogo from '@/assets/img/logo/projects/OpenAI.svg'
 
 export default function SkeetRow() {
   const { t } = useTranslation()
@@ -143,9 +144,9 @@ export default function SkeetRow() {
                     link: 'https://graphql.org/',
                   },
                   {
-                    name: 'Apollo',
-                    logo: apolloLogo,
-                    link: 'https://www.apollographql.com/',
+                    name: 'OpenAI',
+                    logo: openAILogo,
+                    link: 'https://openai.com/',
                   },
                   {
                     name: 'Next.js',
