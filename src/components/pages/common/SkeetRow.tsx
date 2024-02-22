@@ -4,21 +4,25 @@ import Image from 'next/image'
 import firebaseLogo from '@/assets/img/logo/projects/Firebase.svg'
 import googleCloudLogo from '@/assets/img/logo/projects/GoogleCloudHorizontal.svg'
 import typescriptLogo from '@/assets/img/logo/projects/TypeScriptHorizontal.svg'
-import graphqlLogo from '@/assets/img/logo/projects/graphql.svg'
+import pnpmLogo from '@/assets/img/logo/projects/pnpm-logo.svg'
 import prismaLogo from '@/assets/img/logo/projects/prisma.svg'
 import expoLogo from '@/assets/img/logo/projects/Expo.svg'
 import nextLogo from '@/assets/img/logo/projects/nextjs.svg'
-import apolloLogo from '@/assets/img/logo/projects/apollo.svg'
 import { Button } from '@/components/common/atoms/Button'
 import clsx from 'clsx'
 import SkeetLogoHorizontalLink from '@/components/common/atoms/SkeetLogoHorizontalLink'
+import { useCallback, useMemo, useState } from 'react'
 import { copyToClipboard } from '@/utils/userAction'
-import { useCallback, useState } from 'react'
 import openAILogo from '@/assets/img/logo/projects/OpenAI.svg'
+import { BookOpenIcon } from '@heroicons/react/24/outline'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function SkeetRow() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const isJapanese = useMemo(() => i18n.language === 'ja', [i18n.language])
   const [copyText, setCopyText] = useState('common:copy')
+
   const handleClick = useCallback(() => {
     copyToClipboard('npm i -g @skeet-framework/cli')
     setCopyText('common:copied')
@@ -27,7 +31,6 @@ export default function SkeetRow() {
       setCopyText('common:copy')
     }, 2000)
   }, [])
-
   return (
     <>
       <div className="relative isolate overflow-hidden">
@@ -55,15 +58,18 @@ export default function SkeetRow() {
           />
         </svg>
         <Container className="pb-20 pt-24 text-center lg:pt-40">
-          <h1 className="font-display mx-auto max-w-4xl text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-7xl">
-            Effortless.
-            <br />
-            Serverless.
+          <h1 className="font-display mx-auto max-w-4xl bg-gradient-to-t from-gray-600 via-gray-700 to-gray-900 bg-clip-text text-6xl font-extrabold tracking-tighter text-transparent dark:from-gray-200 dark:via-gray-50 dark:to-white sm:text-8xl md:text-9xl">
+            Just Build It.
           </h1>
-          <p className="mx-auto mt-6 max-w-lg text-lg tracking-tight text-gray-700 dark:text-gray-200">
-            {t('common:SkeetRow.body1')}
-            <br />
-            {t('common:SkeetRow.body2')}
+          <p
+            className={clsx(
+              isJapanese ? 'max-w-3xl' : 'max-w-xl',
+              'text-md mx-auto mt-6  font-medium tracking-tight text-gray-700 dark:text-gray-100 sm:text-xl'
+            )}
+          >
+            {t('common:SkeetRow.body1')} <br className="hidden sm:block" />
+            {t('common:SkeetRow.body2')} <br className="hidden sm:block" />
+            {t('common:SkeetRow.body3')}
           </p>
           <div className="py-12">
             <SkeetLogoHorizontalLink className="w-42 mx-auto h-12" />
@@ -75,6 +81,10 @@ export default function SkeetRow() {
               target="_blank"
               rel="noreferrer"
             >
+              <BookOpenIcon
+                className="mr-2 inline-block h-5 w-5"
+                aria-hidden="true"
+              />
               Skeet Docs
             </Button>
             <Button
@@ -84,10 +94,14 @@ export default function SkeetRow() {
               target="_blank"
               rel="noreferrer"
             >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="mr-2 inline-block h-5 w-5"
+              />
               GitHub
             </Button>
           </div>
-          <div className="relative mx-auto mt-16 max-w-sm rounded-md bg-gray-900 p-4 text-white">
+          <div className="relative mx-auto mt-10 max-w-sm rounded-md bg-gray-900 p-4 text-white">
             <div className="absolute left-2 top-2 flex space-x-1.5">
               <div className="h-2.5 w-2.5 rounded-full bg-red-500"></div>
               <div className="h-2.5 w-2.5 rounded-full bg-yellow-400"></div>
@@ -139,9 +153,9 @@ export default function SkeetRow() {
                 ],
                 [
                   {
-                    name: 'GraphQL',
-                    logo: graphqlLogo,
-                    link: 'https://graphql.org/',
+                    name: 'pnpm',
+                    logo: pnpmLogo,
+                    link: 'https://pnpm.io/',
                   },
                   {
                     name: 'OpenAI',
