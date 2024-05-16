@@ -71,7 +71,6 @@ export default function SkeetRow() {
           >
             {t('common:SkeetRow.body1')} <br className="hidden sm:block" />
             {t('common:SkeetRow.body2')} <br className="hidden sm:block" />
-            {t('common:SkeetRow.body3')}
           </p>
           <div className="py-12">
             <SkeetLogoHorizontalLink className="w-42 mx-auto h-12" />
@@ -150,7 +149,7 @@ export default function SkeetRow() {
                   {
                     name: 'Prisma',
                     logo: prismaLogo,
-                    link: 'https://www.prisma.io/',
+                    link: 'https://www.prisma.io/?via=ELSOULLABO',
                   },
                 ],
                 [
