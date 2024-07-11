@@ -30,7 +30,7 @@ Docs for SOULs. (SOULs is now deprecated. Please check our new Architecture "Ske
 ```bash
 # Node version (using nodenv)
 $ node -v
-v18.17.1
+v20.15.1
 
 # Install dependencies
 $ yarn install --frozen-lockfile
